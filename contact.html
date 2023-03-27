@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Horn Creek Pub Menu Prototype</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    </head>
+    <body>
+        <section class="heading">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                            <li><a href="menu.html">MENU</a></li>
+                            <li><a href="https://www.facebook.com/horncreekpub">SPECIALS</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+    </section>
+
+    <!----- Hours ------>
+    <section class="menu">
+        <body>
+            <h1>Hours Open</h1>
+            <p>Monday 4pm - 10pm</p>
+            <p>Tuesday 4pm - 10pm</p>
+            <p>Wednesday 4pm - 10pm</p>
+            <p>Thursday 4pm - 10pm</p>
+            <p>Friday 4pm - 10pm</p>
+            <p>Saturday 4pm - 10pm</p>
+            <h1>Call Us At (269) 623-4949</h1>
+        </body>
+    </section>
+
+    <section class = "footer">
+        <footer>
+            <p>Open Monday-Saturday 4pm-10pm</p>
+            <p>9949 Cedar Creek rd</p>
+            <p>Call Us At (269) 623-4949</p>
+        </footer>
+    </section>
+
+                <!-------JavaScript for Toggle Menu------->
+                <script>
+
+                    var navLinks = document.getElementById("navLinks");
+        
+                    function showMenu(){
+                        navLinks.style.right = "0";
+                    }
+                    function hideMenu(){
+                        navLinks.style.right = "-200px";
+                    }
+        
+                </script>
+    </body>
+</html>
